@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator
+    </title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="heading">Calculator
+    </h1>
+    <div class="container">
+      <h3 class="main">
+       Welcome, <input type="text" placeholder=" Your Name" />
+      </h3>
+
+      <form action="">
+        <div class="double">
+          <div class="form-spending">
+            <label for="">Expenses:</label>
+            <input id="spending-input" type="text" placeholder="costs" />
+          </div>
+
+          <div class="form-price">
+            <label for="">Price:</label>
+            <input id="price-input" type="number" placeholder="price" />
+          </div>
+        </div>
+
+        <div class="double">
+          <div class="form-status">
+            <input id="status-input" type="checkbox" />
+            <label for="status-input">is paid ?</label>
+          </div>
+          <button class="btn">Add</button>
+        </div>
+      </form>
+
+      <!--toplam alani-->
+
+      <div class="total">Total Expenditure : <span id="total-info">0</span></div>
+
+      <select id="filter-select">
+        <option value="all">All</option>
+        <option value="payed">Paid</option>
+        <option value="not-payed">Not Paid</option>
+      </select>
+
+      <div class="list"></div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
